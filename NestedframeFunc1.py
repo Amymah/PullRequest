@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 #function for intializing the driver
-def initialize_driver():
+def initialize_driver()::
     service=Service(ChromeDriverManager().install())
     driver=webdriver.Chrome(service=service)
     driver.maximize_window()
